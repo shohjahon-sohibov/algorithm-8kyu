@@ -7,14 +7,11 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 // Answer
 
-function findMultiples(integer, limit) {
-  let arr = []
-  let max = Math.floor(limit / integer)
-  let count = 0
-  for(let i = 0; i < max; i++) {
-    if((count += integer) <= limit) {
-      arr.push(count) 
-    }
-  }
-  return arr
+function findMultiples(int,limit){
+  let result = []
+  
+  for (let i = int; i<=limit ; i+=int)
+    result.push(i)
+    
+  return result
 }
